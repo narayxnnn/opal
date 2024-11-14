@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full">
       <div
-        className="h-[130vh] md:h-[150vh]"
+        className="h-[100vh] md:h-[150vh]"
         style={{
           backgroundImage: "url(/bgImage.png)",
           backgroundSize: "cover",
@@ -19,7 +19,7 @@ export default function Home() {
         <Navbar />
 
         <div className="md:ml-32 my-40 text-center md:text-start">
-          <div className="mr-30 md:ml-20 text-4xl ">
+          <div className="mr-30 md:ml-2 text-3xl md:text-4xl ">
             The first webcam
             <br />
             Designed for Laptops
@@ -36,14 +36,16 @@ export default function Home() {
       </div>
       <Products />
       <div className="flex justify-center items-center">
-        <h1 className="z-10 text-[127px] md:text-[700px] leading-10 mt-[310px] font-[550] text-black w-full">
+        <h1 className="z-10 text-[185px] md:text-[700px] leading-10 mt-[200px] md:mt-[310px] font-[550] text-black w-full">
           Opal
         </h1>
       </div>
 
       <br />
       <br />
-      <Footer />
+      <footer className="mt-72">
+        <Footer />
+      </footer>
       <div className="flex justify-between mx-16">
         <div className="flex justify-between border-t-[1px] gap-16 md:mx-10 text-black">
           <div>Opal camera Inc.</div>
@@ -51,7 +53,7 @@ export default function Home() {
         </div>
         <Link
           href={"#"}
-          className="hidden md:block rounded-full bg-black text-white p-3"
+          className="hidden md:block rounded-full bg-gray-400 text-white p-3"
         >
           ↑
         </Link>

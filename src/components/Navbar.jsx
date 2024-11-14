@@ -2,12 +2,14 @@ import Image from "next/image";
 import AlertHeader from "./AlertHeader";
 import Link from "next/link";
 import Logo from "../../public/logo.png";
+import ResponsiveNavbar from "./ResponsiveNavbar";
 
 const Navbar = () => {
   return (
     <>
       <AlertHeader />
-      <div className="mx-12 my-6 flex justify-between flex-wrap">
+      <ResponsiveNavbar />
+      <div className="mx-12 hidden my-6 md:flex justify-between flex-wrap">
         <div className="flex gap-20 flex-wrap">
           <p className="text-3xl -mt-2">Opal</p>
           <div>
