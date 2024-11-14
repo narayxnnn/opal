@@ -51,7 +51,7 @@ export default function Home() {
         </div>
         <Link
           href={"#"}
-          className="hidden md:block rounded-full bg-gray-300 text-black p-3"
+          className="hidden md:block rounded-full bg-black text-white p-3"
         >
           ↑
         </Link>
