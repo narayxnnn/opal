@@ -40,7 +40,7 @@ const Navbar = () => {
           </div>
           <div>
             <h3 className="font-semibold text-sm">Resourses</h3>
-            <ul className="text-gray-500 text-xs space-y-3 mt-3">
+            <ul className="text-gray-500 text-xs space-y-3 mt-3 ">
               <li className="hover:text-white transition duration-300">
                 Support
               </li>
