@@ -26,31 +26,33 @@ const Products = () => {
     },
   ];
   return (
-    <div className="flex justify-center md:justify-between items-center mx-28 flex-wrap mt-36 md:mt-0">
-      {products.map((p) => (
-        <div className="flex pt-14" key={p.title}>
-          <div className="bg-white flex gap-3 flex-col items-center">
-            <p className="text-3xl font-semibold text-black">{p.title}</p>
-            <p className="text-gray-400">{p.description}</p>
-            {p.price && (
-              <Link
-                href={"#"}
-                className="text-black rounded-full bg-yellow-400 px-6 py-2"
-              >
-                {p.price}
-              </Link>
-            )}
+    <div className="md:border-b">
+      <div className="flex justify-center md:justify-between items-center mx-28 flex-wrap mt-36 md:mt-0">
+        {products.map((p) => (
+          <div className="flex pt-14" key={p.title}>
+            <div className="bg-white flex gap-3 flex-col items-center">
+              <p className="text-3xl font-semibold text-black">{p.title}</p>
+              <p className="text-gray-400">{p.description}</p>
+              {p.price && (
+                <Link
+                  href={"#"}
+                  className="text-black rounded-full bg-yellow-400 px-6 py-2"
+                >
+                  {p.price}
+                </Link>
+              )}
 
-            <Image
-              width={400}
-              height={400}
-              className="mix-blend-multiply"
-              alt="tadpole"
-              src={p.image}
-            />
+              <Image
+                width={400}
+                height={400}
+                className="mix-blend-multiply"
+                alt="tadpole"
+                src={p.image}
+              />
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

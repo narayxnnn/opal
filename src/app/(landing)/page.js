@@ -36,7 +36,7 @@ export default function Home() {
       </div>
       <Products />
       <div className="flex justify-center items-center">
-        <h1 className="z-10 text-[185px] md:text-[700px] leading-10 mt-[200px] md:mt-[310px] font-[550] text-black w-full">
+        <h1 className="z-10 text-[185px] md:text-[800px] leading-10 mt-[200px] md:mt-[310px] font-[550] text-black w-full">
           Opal
         </h1>
       </div>
